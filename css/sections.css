@@ -1,0 +1,35 @@
+.basic-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 400px;
+    background-image: url(../img/image13.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 40px;
+    justify-content: space-around;
+}
+.section__header{
+    font-size: 56px;
+    color: #fff;
+}
+.section__btn{
+    border: 3px solid #fff;
+    color: #fff;
+    font-weight: 400;
+    background-color: transparent;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 150px;
+}
+.section__btn:hover{
+    background-color: #fff;
+    color: #1a1a1a;
+    transition: background-color .35s linear;
+}
+
+
+.section__desc{
+    color: #fff;
+    font-size: 24px;
+}
