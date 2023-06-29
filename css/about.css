@@ -1,0 +1,18 @@
+.about{
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    /* border-bottom: 1px solid rgba(82, 82, 82, .85); */
+    height: calc(100vh - 72px);
+}
+.about__header{
+    font-size: 42px;
+    width: 50%;
+    font-weight: 400;
+}
+.about__photo{
+    display: flex;
+    align-items: center;
+}
