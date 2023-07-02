@@ -37,6 +37,9 @@ body{
 .main{
     grid-area: main;
     min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .aside{
     grid-area: aside;
@@ -46,7 +49,11 @@ body{
 }
 .footer{
     grid-area: footer;
-    background-color: #e2deed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 150px;
+    color: #fff;
 }
 
 @media screen and (max-width: 468px) {

@@ -3,11 +3,13 @@
     flex-direction: column;
     width: 100%;
     min-height: 400px;
-    background-image: url(../img/image13.png);
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 40px;
     justify-content: space-around;
+}
+.health{
+    background-image: url(../img/image13.png); 
 }
 .section__header{
     font-size: 56px;
@@ -28,8 +30,18 @@
     transition: background-color .35s linear;
 }
 
-
 .section__desc{
     color: #fff;
     font-size: 24px;
+}
+
+.astrology{
+    /* temp */
+    background-color: #80e8a4;
+}
+.life{
+    background-color: #e9b056;
+}
+.guarantees{
+    background-color: #18bec9;
 }
