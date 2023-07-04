@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 body{
+    display: flex;
+    justify-content: center;
     background-color: #1a1a1a;
 }
 .grid-container{
@@ -16,7 +18,7 @@ body{
     'footer footer';
     /* делаю разделители */
     gap: 2px;
-    margin: 0 auto;
+    justify-content: center;
     max-width: 90%;
 }
 .tiny-container{
@@ -54,18 +56,6 @@ body{
     align-items: center;
     min-height: 150px;
     color: #fff;
-}
-
-@media screen and (max-width: 468px) {
-    .grid-container{
-        width: 100%;
-        grid-template-areas: 
-        'header'
-        'main'
-        'footer';
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
 }
 
 

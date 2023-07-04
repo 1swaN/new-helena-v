@@ -5,3 +5,40 @@
 .footer__rights{
     font-size: 20px;
 }
+.connect{
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+.footer__question{
+    padding-right: 20px;
+    font-size: 24px;
+}
+.footer__connect{
+    width: 250px;
+    height: 45px;
+    border: 2px solid transparent;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    text-indent: 20px;
+}
+.footer__connect:focus{
+    outline: none;
+}
+.footer__submit{
+    width: 50px;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    background-color: #959292;
+    border: 2px solid transparent;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    cursor: pointer;
+}
+.footer__submit:hover{
+    opacity: .8;
+}
+.footer__submit:active{
+    opacity: 1;
+}

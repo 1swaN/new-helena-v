@@ -1,0 +1,106 @@
+@media screen and (max-width: 600px) {
+    .grid-container{
+        width: 100%;
+        grid-template-areas: 
+        'header'
+        'main'
+        'footer';
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin: 0;
+    }
+    .tiny-container{
+        width: 100%;
+    }
+    .header{
+        padding-top: 10px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        padding: 50px 20px;
+        overflow: hidden;
+    }
+    .about__info{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .about__photo{
+        object-fit: cover;
+    }
+    .about__header{
+        font-size: 36px;
+    }
+    .slideshow-container{
+        max-width: 450px;
+    }
+    .basic-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .basic-info-visible{
+        margin: auto;
+        align-items: center;
+        gap: 35px;
+    }
+    .section__header, .section__desc{
+        text-align: center;
+    }
+    .additional__header{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .section__additional{
+        padding: 0;
+        width: 70%;
+        margin: auto;
+        text-align: justify;
+        font-size: 14px;
+        padding-bottom: 10px;
+
+    }
+    .footer{
+        flex-direction: column;
+        gap: 35px;
+        padding: 35px 5px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px){
+    body{
+        
+    }
+    .about{
+        padding: 50px 10px;
+    }
+    .basic-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .basic-info-visible{
+        margin: auto;
+        align-items: center;
+        gap: 35px;
+    }
+    .section__header, .section__desc{
+        text-align: center;
+    }
+    .additional__header{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .section__additional{
+        padding: 0;
+        width: 70%;
+        margin: auto;
+        text-align: justify;
+        font-size: 14px;
+        padding-bottom: 10px;
+
+    }
+    .footer{
+        flex-direction: column;
+        gap: 35px;
+        padding: 35px 0;
+    }
+}
