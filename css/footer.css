@@ -42,3 +42,12 @@
 .footer__submit:active{
     opacity: 1;
 }
+
+.footer__search{
+    display: flex;
+    flex-direction: row;
+}
+.connect__inner{
+    display: flex;
+    align-items: center;
+}

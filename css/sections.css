@@ -27,7 +27,7 @@
     /* transition: display .35s linear; */
 }
 .health{
-    background-image: url(../img/image13.png);
+    background-image: url(../img/health.jpg);
     background-size: cover;
     background-position: center center;
     /* background-attachment: fixed; */
@@ -61,13 +61,20 @@
 
 .astrology{
     /* temp */
-    background-color: #80e8a4;
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+    background-position: center center;
+
 }
 .life{
-    background-color: #e9b056;
+    background-image: url(../img/woman.jpg);
+    background-size: cover;
+    background-position: center center;
 }
 .guarantees{
-    background-color: #18bec9;
+    background-image: url(../img/image42.png);
+    background-size: cover;
+    background-position: bottom center;
 }
 .additional__text{
     font-size: 24px;

@@ -20,6 +20,7 @@
         flex-direction: column;
         padding: 50px 20px;
         overflow: hidden;
+        min-height: auto;
     }
     .about__info{
         width: 100%;
@@ -47,6 +48,9 @@
     .section__header, .section__desc{
         text-align: center;
     }
+    .section__desc{
+        font-size: 20px;
+    }
     .additional__header{
         text-align: center;
         padding-bottom: 10px;
@@ -58,12 +62,20 @@
         text-align: justify;
         font-size: 14px;
         padding-bottom: 10px;
-
+    }
+    .additional__text{
+        font-size: 20px;
     }
     .footer{
         flex-direction: column;
         gap: 35px;
-        padding: 35px 5px;
+        padding: 35px 0px;
+    }
+    .connect__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 }
 @media screen and (min-width: 600px) and (max-width: 1024px){
@@ -93,11 +105,13 @@
         text-align: justify;
         font-size: 14px;
         padding-bottom: 10px;
-
     }
     .footer{
         flex-direction: column;
         gap: 35px;
-        padding: 35px 0;
+        padding: 50px 0;
+    }
+    .main .tiny-container{
+        width: 90%;
     }
 }
