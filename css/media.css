@@ -67,9 +67,6 @@
     }
 }
 @media screen and (min-width: 600px) and (max-width: 1024px){
-    body{
-        
-    }
     .about{
         padding: 50px 10px;
     }
