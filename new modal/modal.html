@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="choices.min.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="modal">
+      <h3 class="modal__header">Information about you</h3>
+      <div class="modal__texts">
+        <input class="modal__input" type="text" placeholder="Your name" />
+        <input class="modal__input" type="text" placeholder="Your surname" />
+        <input class="modal__input" type="text" placeholder="Your E-mail" />
+      </div>
+
+      <div class="language">
+        <h4 class="language__header">Choose the language</h4>
+        <select
+          name="language"
+          class="language-select"
+          aria-label="language select"
+        >
+          <option value="English">English</option>
+          <option value="Spanish">Spanish</option>
+          <option value="Russian">Русский</option>
+        </select>
+      </div>
+
+      <textarea name="wishes" id="textarea" cols="30" rows="5" placeholder="Add your wishes:"></textarea>
+
+      <button class="send-btn" type="submit">Send!</button>
+    </div>
+
+    <script src="choices.min.js"></script>
+    <script src="select.js"></script>
+  </body>
+</html>

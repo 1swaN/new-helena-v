@@ -3,26 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link
+      type="image/x-icon"
+      href="./img/469f538236d24ec3a67081abdb6e00cd.png"
+      rel="shortcut icon"
+    />
+    <link
+      type="Image/x-icon"
+      href="./img/469f538236d24ec3a67081abdb6e00cd.png"
+      rel="icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="js/simplebar/simplebar.css"
+    />
+
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/dropdown.css" />
     <link rel="stylesheet" href="css/about.css" />
-    <link rel="stylesheet" href="css/slider.css">
-    <link rel="stylesheet" href="css/sections.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="css/imgs.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <link type="image/x-icon" href="./img/469f538236d24ec3a67081abdb6e00cd.png" rel="shortcut icon">
-    <link type="Image/x-icon" href="./img/469f538236d24ec3a67081abdb6e00cd.png" rel="icon">
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/imgs.css" />
+    <link rel="stylesheet" href="css/progressline.css">
     <title>Helena's</title>
+
+    <noscript>
+      <style>
+        /**
+        * Reinstate scrolling for non-JS clients
+        */
+        .simplebar-content-wrapper {
+          scrollbar-width: auto;
+          -ms-overflow-style: auto;
+        }
+    
+        .simplebar-content-wrapper::-webkit-scrollbar,
+        .simplebar-hide-scrollbar::-webkit-scrollbar {
+          display: initial;
+          width: initial;
+          height: initial;
+        }
+      </style>
+    </noscript>
+
   </head>
   <body>
+    <div class="progress__line js-progress-line"></div>
+
     <div class="grid-container">
       <div class="tiny-container">
         <header class="header">
@@ -40,14 +84,19 @@
       <main class="main">
         <div class="tiny-container">
           <section class="about">
-           <div class="about__info">
-            <h1 class="about__header">
-              Helena - a specialist in multidimensional medicine, psychology and psychosomatics.
-            </h1>
-            <button class="sign">Sign up</button>
-           </div>
+            <div class="about__info">
+              <h1 class="about__header">
+                Helena - a specialist in multidimensional medicine, psychology
+                and psychosomatics.
+              </h1>
+              <button class="sign">Sign up</button>
+            </div>
             <div class="about__photo">
-              <img class="img-block" src="https://placehold.co/300x400" alt="Helena's photo" />
+              <img
+                class="img-block"
+                src="https://placehold.co/300x400"
+                alt="Helena's photo"
+              />
             </div>
           </section>
         </div>
@@ -90,81 +139,132 @@
 
         <section class="basic-info health">
           <div class="basic-info-visible">
-            <h2 class="section__header"><i class="fa-solid fa-user-nurse"></i> Health care</h2>
-            <p class="section__desc">Together we can find out which vitamins are more&nbsp;<br>
-            suitable for you and many other things!</p>
+            <h2 class="section__header">
+              <i class="fa-solid fa-user-nurse"></i> Health care
+            </h2>
+            <p class="section__desc">
+              Together we can find out which vitamins are more&nbsp;<br />
+              suitable for you and many other things!
+            </p>
             <button class="section__btn health-btn">Learn more</button>
           </div>
           <ul class="section__additional" id="health">
-            <p class="additional__header">You'll find a lot of knowlegde about your health:</p>
-            <li class="additional__text">Сможете выяснить каких микро и макро элементов в вашем организме достаточно или не хватает</li>
-            <li class="additional__text">Yайти наилучшее место для сна/отдыха/работы в доме</li>
+            <p class="additional__header">
+              You'll find a lot of knowlegde about your health:
+            </p>
+            <li class="additional__text">
+              You can find out what micro and macro elements in your body
+              enough or not enough
+            </li>
+            <li class="additional__text">
+              Find the best place to sleep/rest/work in the house
+            </li>
           </ul>
         </section>
 
         <section class="basic-info life">
           <div class="basic-info-visible">
-            <h2 class="section__header"><i class="fa-solid fa-hand-spock"></i> Lifestyle</h2>
-            <p class="section__desc">You have a great opportunity to change your lifestyle&nbsp;<br>
-            and moreover - to change the space around you!</p>
+            <h2 class="section__header">
+              <i class="fa-solid fa-hand-spock"></i> Lifestyle
+            </h2>
+            <p class="section__desc">
+              You have a great opportunity to change your lifestyle&nbsp;<br />
+              and moreover - to change the space around you!
+            </p>
             <button class="section__btn life-btn">Learn more</button>
           </div>
-      
+
           <ul class="section__additional" id="life">
-            <p class="additional__header">Мы сможем:</p>
-            <li class="additional__text">Улучшить свое состояние, уровень жизненной энергии, убрать причины упадка сил, вялости, недовольства собой и/или другими</li>
+            <p class="additional__header">We will be able to:</p>
+            <li class="additional__text">
+              To improve your condition, your level of vitality, to remove the causes of
+              of loss of energy, lethargy, dissatisfaction with oneself and/or others
+            </li>
           </ul>
         </section>
 
         <section class="basic-info astrology">
           <div class="basic-info-visible">
-            <h2 class="section__header"><i class="fa-solid fa-moon"></i> Astrology</h2>
-            <p class="section__desc">Astrology is a great science about future and past.&nbsp;<br>
-            Wanna know your future?</p>
+            <h2 class="section__header">
+              <i class="fa-solid fa-moon"></i> Astrology
+            </h2>
+            <p class="section__desc">
+              Astrology is a great science about future and past.&nbsp;<br />
+              Wanna know your future?
+            </p>
             <button class="section__btn astro-btn">Learn more</button>
           </div>
-          
+
           <ul class="section__additional" id="astro">
-            <p class="additional__header">Вместе мы можем:</p>
-            <li class="additional__text">Решить кармические долги/задачи с другими людьми, убирать причины, по которым мы «нашли друг друга», исправить свои ошибки из предыдущих воплощений.</li>
-            <li class="additional__text">Максимально активизировать и устранить причины повреждения наших каналов связи с Высшим</li>
-            <li class="additional__text">Убрать негативные энергетические формирования, связь с низкими вибрациями, деструктивным Эго. </li>
+            <p class="additional__header">Together we can:</p>
+            <li class="additional__text">
+              Resolve karmic debts with other people, remove the reasons
+              why we "found each other", correct our mistakes from
+              previous incarnations.
+            </li>
+            <li class="additional__text">
+              Maximize and eliminate the causes of damage to our
+              channels of communication with the Higher
+            </li>
+            <li class="additional__text">
+              Remove negative energy formations, connection to low
+              vibrations, destructive ego.
+            </li>
           </ul>
         </section>
 
         <section class="basic-info guarantees">
           <div class="basic-info-visible">
-            <h2 class="section__header"><i class="fa-solid fa-book"></i> Still not sure?</h2>
-            <p class="section__desc">If you're not ready - you can be sure that <br>
+            <h2 class="section__header">
+              <i class="fa-solid fa-book"></i> Still not sure?
+            </h2>
+            <p class="section__desc">
+              If you're not ready - you can be sure that <br />
               I can guarantee you the best results!
             </p>
             <button class="section__btn guarantee-btn">Learn more</button>
           </div>
           <ul class="section__additional" id="guarantee">
             <p class="additional__header">Trust me:</p>
-            <li class="additional__text">100% безопасно, не возможно навредить ни в каком случае;</li>
-            <li class="additional__text">Не больно, не долго, не страшно - быстро и ощущения тела видны быстро</li>
-            <li class="additional__text">Результаты приятные во всех отношениях</li>
+            <li class="additional__text">
+              100% safe, impossible to harm in any way;
+            </li>
+            <li class="additional__text">
+              Not painful, not long, not scary - fast and body sensations are visible
+              quickly
+            </li>
+            <li class="additional__text">
+              The results are pleasing in every way
+            </li>
           </ul>
         </section>
-        
       </main>
       <footer class="footer">
         <div class="footer__logo">Helena's</div>
         <div class="connect">
-         <div class="connect__inner">
+          <div class="connect__inner">
             <p class="footer__question">Want to know more?</p>
             <div class="footer__search">
-              <input type="text" class="footer__connect" placeholder="Type your e-mail here">
-              <button type="submit" class="footer__submit"><i class="fa-solid fa-check"></i></button>
+              <input
+                type="text"
+                class="footer__connect"
+                placeholder="Type your e-mail here"
+              />
+              <button type="submit" class="footer__submit">
+                <i class="fa-solid fa-check"></i>
+              </button>
             </div>
-         </div>
+          </div>
         </div>
         <p class="footer__rights">All rights reserved - 2023</p>
       </footer>
     </div>
 
+    <script src="js/simplebar/simplebar.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/scroll.js"></script>
     <script src="js/learnmore.js"></script>
+    <script src="js/block.js"></script>
+    <script src="js/progressline.js"></script>
   </body>
 </html>

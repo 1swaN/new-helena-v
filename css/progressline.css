@@ -1,0 +1,8 @@
+.progress__line{
+    height: 2px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #22f2b4;
+    /* width: 100%; */
+}
