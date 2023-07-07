@@ -31,13 +31,13 @@ body{
 .progress{
   width: 10px;
   height: 15px;
-  background: #f60d54;
+  background: #3feb98;
   border-radius: 13px;
 }
 .text{
   position: absolute;
   left: 160px;
-  color: #fdb5ca;
+  color: #b8ffdc;
   font-size: 15px;
   letter-spacing: 1px;
   line-height: 21px;
