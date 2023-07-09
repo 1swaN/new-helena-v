@@ -73,10 +73,10 @@
           <p class="header__logo">Helena's</p>
           <div class="header__lang">
             <button class="langbtn"><i class="fa-solid fa-globe"></i></button>
-            <div class="lang-content">
-              <a href="#" class="lang__link">English</a>
-              <a href="#" class="lang__link">Spanish</a>
-              <a href="#" class="lang__link">Русский</a>
+            <div class="lang-content" id="language-select">
+              <a data-lang="en" href="#" class="lang__link">English</a>
+              <a data-lang="esp" href="#" class="lang__link">Spanish</a>
+              <a data-lang="rus" href="#" class="lang__link">Русский</a>
             </div>
           </div>
         </header>
@@ -85,11 +85,11 @@
         <div class="tiny-container">
           <section class="about">
             <div class="about__info">
-              <h1 class="about__header">
+              <h1 class="about__header" data-translate="about_container">
                 Helena - a specialist in multidimensional medicine, psychology
                 and psychosomatics.
               </h1>
-              <button class="sign">Sign up</button>
+              <button class="sign" data-translate="sign_up_button">Sign up</button>
             </div>
             <div class="about__photo">
               <img
@@ -139,24 +139,24 @@
 
         <section class="basic-info health">
           <div class="basic-info-visible">
-            <h2 class="section__header">
+            <h2 class="section__header" data-translate="heatlhcare_container">
               <i class="fa-solid fa-user-nurse"></i> Health care
             </h2>
-            <p class="section__desc">
+            <p class="section__desc" data-translate="health_section">
               Together we can find out which vitamins are more&nbsp;<br />
               suitable for you and many other things!
             </p>
-            <button class="section__btn health-btn">Learn more</button>
+            <button class="section__btn health-btn" data-translate="health_button">Learn more</button>
           </div>
           <ul class="section__additional" id="health">
-            <p class="additional__header">
+            <p class="additional__header" data-translate="health_header">
               You'll find a lot of knowlegde about your health:
             </p>
-            <li class="additional__text">
+            <li class="additional__text" data-translate="health_text1">
               You can find out what micro and macro elements in your body
               enough or not enough
             </li>
-            <li class="additional__text">
+            <li class="additional__text" data-translate="health_text2">
               Find the best place to sleep/rest/work in the house
             </li>
           </ul>
@@ -164,19 +164,19 @@
 
         <section class="basic-info life">
           <div class="basic-info-visible">
-            <h2 class="section__header">
+            <h2 class="section__header" data-translate="lifestyle_container">
               <i class="fa-solid fa-hand-spock"></i> Lifestyle
             </h2>
-            <p class="section__desc">
+            <p class="section__desc" data-translate="lifestyle_section">
               You have a great opportunity to change your lifestyle&nbsp;<br />
               and moreover - to change the space around you!
             </p>
-            <button class="section__btn life-btn">Learn more</button>
+            <button class="section__btn life-btn" data-translate="lifestyle_button">Learn more</button>
           </div>
 
           <ul class="section__additional" id="life">
-            <p class="additional__header">We will be able to:</p>
-            <li class="additional__text">
+            <p class="additional__header" data-translate="lifestyle_header">We will be able to:</p>
+            <li class="additional__text" data-translate="lifestyle_text">
               To improve your condition, your level of vitality, to remove the causes of
               of loss of energy, lethargy, dissatisfaction with oneself and/or others
             </li>
@@ -185,28 +185,28 @@
 
         <section class="basic-info astrology">
           <div class="basic-info-visible">
-            <h2 class="section__header">
+            <h2 class="section__header" data-translate="astrology_container">
               <i class="fa-solid fa-moon"></i> Astrology
             </h2>
-            <p class="section__desc">
+            <p class="section__desc" data-translate="astrology_section">
               Astrology is a great science about future and past.&nbsp;<br />
               Wanna know your future?
             </p>
-            <button class="section__btn astro-btn">Learn more</button>
+            <button class="section__btn astro-btn" data-translate="astrology_button">Learn more</button>
           </div>
 
           <ul class="section__additional" id="astro">
-            <p class="additional__header">Together we can:</p>
-            <li class="additional__text">
+            <p class="additional__header" data-translate="astrology_header">Together we can:</p>
+            <li class="additional__text" data-translate="astrology_text1">
               Resolve karmic debts with other people, remove the reasons
               why we "found each other", correct our mistakes from
               previous incarnations.
             </li>
-            <li class="additional__text">
+            <li class="additional__text" data-translate="astrology_text2">
               Maximize and eliminate the causes of damage to our
               channels of communication with the Higher
             </li>
-            <li class="additional__text">
+            <li class="additional__text" data-translate="astrology_text3">
               Remove negative energy formations, connection to low
               vibrations, destructive ego.
             </li>
@@ -215,25 +215,25 @@
 
         <section class="basic-info guarantees">
           <div class="basic-info-visible">
-            <h2 class="section__header">
+            <h2 class="section__header" data-translate="sns_container">
               <i class="fa-solid fa-book"></i> Still not sure?
             </h2>
-            <p class="section__desc">
+            <p class="section__desc" data-translate="sns_section">
               If you're not ready - you can be sure that <br />
               I can guarantee you the best results!
             </p>
-            <button class="section__btn guarantee-btn">Learn more</button>
+            <button class="section__btn guarantee-btn" data-translate="sns_button">Learn more</button>
           </div>
           <ul class="section__additional" id="guarantee">
-            <p class="additional__header">Trust me:</p>
-            <li class="additional__text">
+            <p class="additional__header" data-translate="sns_header">Trust me:</p>
+            <li class="additional__text" data-translate="sns_text1">
               100% safe, impossible to harm in any way;
             </li>
-            <li class="additional__text">
+            <li class="additional__text" data-translate="sns_text2">
               Not painful, not long, not scary - fast and body sensations are visible
               quickly
             </li>
-            <li class="additional__text">
+            <li class="additional__text" data-translate="sns_text3">
               The results are pleasing in every way
             </li>
           </ul>
@@ -243,7 +243,7 @@
         <div class="footer__logo">Helena's</div>
         <div class="connect">
           <div class="connect__inner">
-            <p class="footer__question">Want to know more?</p>
+            <p class="footer__question" data-translate="footer_question">Want to know more?</p>
             <div class="footer__search">
               <input
                 type="text"
@@ -256,10 +256,10 @@
             </div>
           </div>
         </div>
-        <p class="footer__rights">All rights reserved - 2023</p>
+        <p class="footer__rights" data-translate="rights_content">All rights reserved - 2023</p>
       </footer>
     </div>
-
+    <script src="./js/translateScript.js"></script>
     <script src="js/simplebar/simplebar.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/scroll.js"></script>
