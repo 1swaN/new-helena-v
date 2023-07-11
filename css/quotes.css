@@ -8,21 +8,18 @@
     '. dain'
     'uvenalius .'
     '. dante ';
-    gap: 60px;
+    gap: 40px;
     padding: 40px 0;
     font-size: 28px;
 }
 .astrology_quote{
     opacity: 0;
     text-align: center;
-    transition: all .8s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 .italic-name{
     font-style: italic;
 }
-/* .italic-name i{
-    font-size: inherit;
-} */
 .dante{
     grid-area: dante;
 }
