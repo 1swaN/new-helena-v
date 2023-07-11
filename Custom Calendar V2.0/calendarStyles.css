@@ -1,0 +1,210 @@
+.calendar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .datetime-input {
+    display: none;
+  }
+  
+  #time-input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 8px;
+    width: 150px;
+  }
+  
+  .date-input {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .date-input input {
+    padding-right: 30px; /* Добавляем отступ для размещения кнопки */
+  }
+  
+  .date-input .calendar-btn {
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("./img/calendar-icon_34471.ico");
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  
+  
+  .date-input .calendar-btn img {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Добавляем стили для размера кнопки */
+  /* .date-input .calendar-btn {
+    width: 20px;
+    height: 20px;
+  }
+     */
+  /* .date-input .calendar-btn img {
+    width: 20px;
+    height: 20px;
+  } */
+  
+  
+  #date-input {
+    width: 200px; /* Установите ширину поля ввода по вашему усмотрению */
+  }
+  
+  #open-calendar-btn {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  .calendar-popup {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    display: none;
+  }
+  
+  /* .open-calendar-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+  } */
+  
+  .calendar-container {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+   
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .calendar-body {
+    padding: 10px;
+  }
+  .calendar-body .dates .occupied {
+    background-color: red;
+    color: white;
+  }
+  
+  .current-month-year {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .prev-month-btn,
+  .next-month-btn {
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .weekdays {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .weekday {
+    width: 14.28%;
+    font-weight: bold;
+  }
+  .time-picker {
+    margin-top: 8px;
+    display: flex;
+  }
+  .time-menu {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+  }
+  
+  .time-menu div {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .time-menu div:hover {
+    background-color: #f0f0f0;
+  }
+  
+  
+
+  
+  .dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  
+  .date {
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  
+  .date:hover {
+    background-color: #f0f0f0;
+  }
+  .date-cell {
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  
+  .date-cell:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .selected-date {
+    background-color: #007bff;
+    color: #fff;
+  }
+  /* .time-menu .occupied {
+    background-color: red;
+    color: white;
+    cursor: not-allowed;
+  } */
+  
+ .occupied {
+    background-color: red;
+    color: white; 
+    cursor: not-allowed; 
+  }
+  
+  
+  #date-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  

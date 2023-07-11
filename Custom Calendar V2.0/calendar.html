@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Мой календарь</title>
+  <link rel="stylesheet" type="text/css" href="calendarStyles.css">
+</head>
+<body>
+  <!-- <div class="booking-form">
+    <h2>Форма записи</h2>
+    <form id="booking-form">
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="phone">Телефон:</label>
+      <input type="tel" id="phone" name="phone" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="selected-time">Выбранный промежуток времени:</label>
+      <input type="text" id="selected-time" readonly>
+      <button type="submit">Записаться</button>
+    </form>
+  </div>
+   -->
+  <div class="calendar">
+    <div class="date-input">
+      <input type="text" id="date-input" placeholder="Выберите дату">
+      <button class="calendar-btn" id="open-calendar-btn"></button>
+    </div>
+  </div>
+  
+  
+      
+  <div id="calendar-popup" class="calendar-popup">
+    <div class="calendar-container" id="calendarContainer">
+        <div class="calendar-header">
+          <button class="prev-month-btn">&lt;</button>
+          <div class="current-month-year"></div>
+          <button class="next-month-btn">&gt;</button>
+        </div>
+        <div class="calendar-body">
+          <div class="weekdays">
+            <div class="weekday">Пн</div>
+            <div class="weekday">Вт</div>
+            <div class="weekday">Ср</div>
+            <div class="weekday">Чт</div>
+            <div class="weekday">Пт</div>
+            <div class="weekday">Сб</div>
+            <div class="weekday">Вс</div>
+          </div>
+          <div class="dates"></div>
+        </div>
+      </div>      
+  </div>
+  <script src="https://momentjs.com/downloads/moment.js"></script>
+  <script src="https://momentjs.com/downloads/moment-timezone-with-data.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="calendarScripts.js"></script>
+</body>
+</html>
