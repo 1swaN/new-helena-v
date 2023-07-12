@@ -1,6 +1,12 @@
-const btn = document.querySelector('.section__btn');
-const additionalSection = document.querySelector('.section__additional');
+const btn = document.querySelectorAll('.section__btn');
+const additionalSection = document.querySelectorAll('.section__additional');
 
-btn.addEventListener('click', () => {
-  additionalSection.classList.toggle('show');
+
+btn.forEach(el => {
+  el.addEventListener('click', () => {
+    additionalSection.forEach(element => {
+      element.classList.toggle('show');
+    });
+  });
 });
+

@@ -38,11 +38,14 @@
     /* background-attachment: fixed; */
 }
 .section__header{
+    display: inline-block;
     font-size: 56px;
     color: #fff;
 }
-.section__header i{
+.basic-info i{
     font-size: 56px;
+    color: #fff;
+    padding-right: 15px;
 }
 .section__btn{
     border: 3px solid #fff;
