@@ -1,3 +1,6 @@
+const footer = document.querySelector('.footer')
+
+
 class Modal{
     constructor(options){
         let defaultOptions = {
@@ -66,6 +69,7 @@ class Modal{
         //фокус внутри окна
         //выделение первого
         //анимации
+        footer.style.display = 'none'
         this.previousActiveElement = document.activeElement
 
 
@@ -94,6 +98,7 @@ class Modal{
             this.enableScroll()
             this.options.isClose(this)
             this.isOpen = false
+            footer.style.display = 'flex'
             // this.focusTrap()
         }
     }
