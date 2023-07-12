@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="choices.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+    <div class="content">
+        <button class="modal-btn" data-path="first" data-animation="fadeInUp" data-speed="700">Открыть окно 1</button>
+    </div>
+    <div class="modal">
+        <div class="modal__container" data-target="first">
+            <form class="modal__form">
+                <h3 class="modal__header">Information about you</h3>
+                <div class="wrapper">
+                  <div class="modal__texts">
+                    <input class="modal__input" type="text" placeholder="Your name" />
+                    <input class="modal__input" type="text" placeholder="Your surname" />
+                    <input class="modal__input" type="text" placeholder="Your E-mail" />
+                    <div class="language">
+                      <h4 class="language__header">Choose the language</h4>
+                      <select
+                        name="language"
+                        class="language-select"
+                        aria-label="language select"
+                      >
+                        <option value="English">English</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="Russian">Русский</option>
+                      </select>
+                    </div>
+                  </div>
+            
+                  <div class="modal__booking">
+                    <textarea name="wishes" id="textarea" cols="30" rows="5" placeholder="Add your wishes:"></textarea>
+                    <div class="calendar"></div>
+                    <button class="send-btn modal-close" type="submit">Send!</button>
+                  </div>
+                </div>
+              </form>
+          
+        </div>
+    </div>
+    <script src="choices.min.js"></script>
+    <script src="script.js"></script>
+    <script src="select.js"></script>
+</body>
+</html>

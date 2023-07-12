@@ -6,20 +6,17 @@
 }
 body{
   background-color: #2f2f2f;
+  overflow: hidden;
 }
 .modal__form{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-  max-width: 780px;
+  max-width: 900px;
   height: 500px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   align-items: center;
   border: 3px solid #fff;
-  padding: 25px;
+  padding: 25px 0;
   color: #fff;
   gap: 30px;
   overflow: scroll;
@@ -124,11 +121,11 @@ body{
 }
 
 @media screen and (min-width: 768px) {
-  .modal{
-    max-width: 700px;
+  /* .modal{
+    max-width: 900px;
     align-items: center;
     height: auto;
-  }
+  } */
   .wrapper{
     display: flex;
     flex-direction: row;

@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./new modal/choices.min.css"/>
-    <link rel="stylesheet" href="./new modal/modal.css"/>
+    <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./Custom Calendar V2.0/calendarStyles.css"/>
-    <!-- <link rel="stylesheet" href="./new modal/modal plugin/style.css"/> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -92,7 +92,7 @@
                 Helena - a specialist in multidimensional medicine, psychology
                 and psychosomatics.
               </h1>
-              <button id="signUpButton" class="sign" data-translate="sign_up_button">Sign up</button>
+              <button id="signUpButton" class="sign modal-btn" data-translate="sign_up_button" data-path="first" data-animation="fadeInUp" data-speed="700">Sign up</button>
             </div>
             <div class="about__photo">
               <img
@@ -139,6 +139,45 @@
             <span class="dot" onclick="currentSlide(3)"></span>
           </div>
         </section> -->
+
+        <div class="modal">
+          <div class="modal__container" data-target="first">
+              <form class="modal__form">
+                  <h3 class="modal__header">Information about you</h3>
+                  <div class="wrapper">
+                    <div class="modal__texts">
+                      <input class="modal__input" type="text" placeholder="Your name" />
+                      <input class="modal__input" type="text" placeholder="Your surname" />
+                      <input class="modal__input" type="text" placeholder="Your E-mail" />
+                      <div class="language">
+                        <h4 class="language__header">Choose the language</h4>
+                        <select
+                          name="language"
+                          class="language-select"
+                          aria-label="language select"
+                        >
+                          <option value="English">English</option>
+                          <option value="Spanish">Spanish</option>
+                          <option value="Russian">Русский</option>
+                        </select>
+                      </div>
+                    </div>
+              
+                    <div class="modal__booking">
+                      <textarea name="wishes" id="textarea" cols="30" rows="5" placeholder="Add your wishes:"></textarea>
+                      <div class="calendar"></div>
+                      <button class="send-btn modal-close" type="submit">Send!</button>
+                    </div>
+                  </div>
+                </form>
+            
+          </div>
+      </div>
+
+
+
+
+
         <section class="quotes">
           <blockquote class="astrology_quote dante">«Астрология - благороднейшая из наук»<br><span class="italic-name">Данте Алигьери</span></blockquote>
           <blockquote class="astrology_quote socratus">«В каждом человеке солнце,<br>только дайте ему светить»<br><span class="italic-name">Сократ</span></blockquote>
@@ -269,13 +308,13 @@
         <p class="footer__rights" data-translate="rights_content">All rights reserved - 2023</p>
       </footer>
     </div>
-    <script src="./new modal/choices.min.js"></script>
+    <script src="js/choices.min.js"></script>
     <script src="https://momentjs.com/downloads/moment.js"></script>
     <script src="https://momentjs.com/downloads/moment-timezone-with-data.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./Custom Calendar V2.0/calendarScripts.js"></script>
-    <script src="./new modal/select.js"></script>
-    <script src="./new modal/modal plugin/script.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/script.js"></script>
     <script src="./js/translateScript.js"></script>
     <script src="js/simplebar/simplebar.min.js"></script>
     <script src="js/slider.js"></script>
