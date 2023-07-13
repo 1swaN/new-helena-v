@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" href="./Custom Calendar V2.0/calendarStyles.css"/>
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="./Custom Calendar V2.0/calendarStyles.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -165,12 +165,40 @@
               
                     <div class="modal__booking">
                       <textarea name="wishes" id="textarea" cols="30" rows="5" placeholder="Add your wishes:"></textarea>
-                      <div class="calendar"></div>
+                      <div class="calendar">
+                        <div class="date-input">
+                          <input type="text" id="date-input" placeholder="Выберите дату">
+                          <button class="calendar-btn" id="open-calendar-btn"></button>
+                        </div>
+                      </div>
+                      
+                      
+                          
+                      <div id="calendar-popup" class="calendar-popup">
+                        <div class="calendar-container" id="calendarContainer">
+                            <div class="calendar-header">
+                              <button class="prev-month-btn">&lt;</button>
+                              <div class="current-month-year"></div>
+                              <button class="next-month-btn">&gt;</button>
+                            </div>
+                            <div class="calendar-body">
+                              <div class="weekdays">
+                                <div class="weekday">Пн</div>
+                                <div class="weekday">Вт</div>
+                                <div class="weekday">Ср</div>
+                                <div class="weekday">Чт</div>
+                                <div class="weekday">Пт</div>
+                                <div class="weekday">Сб</div>
+                                <div class="weekday">Вс</div>
+                              </div>
+                              <div class="dates"></div>
+                            </div>
+                          </div>      
+                      </div>                      
                       <button class="send-btn modal-close" type="submit">Send!</button>
                     </div>
                   </div>
                 </form>
-            
           </div>
       </div>
 
@@ -313,10 +341,10 @@
       </footer>
     </div>
     <script src="js/choices.min.js"></script>
+    <script src="./Custom Calendar V2.0/calendarScripts.js"></script>
     <script src="https://momentjs.com/downloads/moment.js"></script>
     <script src="https://momentjs.com/downloads/moment-timezone-with-data.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./Custom Calendar V2.0/calendarScripts.js"></script>
     <script src="js/select.js"></script>
     <script src="js/script.js"></script>
     <script src="./js/translateScript.js"></script>

@@ -94,7 +94,7 @@
     max-width: 300px;
     margin: 0 auto;
     text-align: center;
-   
+    color: black;
   }
   
   .calendar-header {
@@ -143,6 +143,7 @@
     border: 1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 5px;
+    z-index: 9999;
   }
   
   .time-menu div {
@@ -153,10 +154,7 @@
   .time-menu div:hover {
     background-color: #f0f0f0;
   }
-  
-  
-
-  
+   
   .dates {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
