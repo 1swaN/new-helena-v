@@ -265,13 +265,13 @@ function parseTime(timeString) {
 }
 
 prevMonthBtn.addEventListener('click', function(event) {
-  event.stopPropagation();
+  event.preventDefault();
   currentDate.setMonth(currentDate.getMonth() - 1);
   generateCalendar();
 });
 
 nextMonthBtn.addEventListener('click', function(event) {
-  event.stopPropagation();
+  event.preventDefault();
   currentDate.setMonth(currentDate.getMonth() + 1);
   generateCalendar();
 });
