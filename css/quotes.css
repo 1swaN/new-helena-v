@@ -7,7 +7,7 @@
     'chizhevsky .'
     '. dain'
     'uvenalius .'
-    '. dante ';
+    '. dante';
     gap: 40px;
     padding: 40px 0 80px 0;
     font-size: 28px;
@@ -16,7 +16,22 @@
     opacity: 0;
     text-align: center;
     transition: all 1s ease-in-out;
+    /* line-height: 31px; */
+    z-index: 2;
 }
+.astrology_quote::before{
+    color: #fff;
+    content: '"';
+    font-size: 3em;
+    line-height: 0;
+    margin-right: 10px;
+    vertical-align: -0.5em;
+    opacity: .2;
+    top: -8px;
+    position: relative;
+    font-style: italic;
+}
+
 .italic-name{
     font-style: italic;
 }

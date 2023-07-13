@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px){
     .grid-container{
         width: 100%;
         grid-template-areas: 
@@ -13,7 +13,9 @@
         width: 100%;
     }
     .header{
-        padding-top: 10px;
+        width: 90%;
+        align-items: center;
+        padding: 10px 25px 0px 25px
     }
     .about{
         display: flex;
@@ -33,6 +35,9 @@
     .about__header{
         font-size: 36px;
     }
+    .quotes{
+        display: none;
+    }
     .slideshow-container{
         max-width: 450px;
     }
@@ -44,6 +49,16 @@
         margin: auto;
         align-items: center;
         gap: 35px;
+    }
+    .basic-info-visible-header{
+        text-align: center;
+    }
+    .section__header, .basic-info-visible-header i{
+        display: block;
+        text-align: center;
+    }
+    .basic-info-visible-header i{
+        padding-bottom: 20px;
     }
     .section__header, .section__desc{
         text-align: center;
@@ -76,6 +91,10 @@
         flex-direction: column;
         align-items: center;
         gap: 10px;
+    }
+
+    .quotes.no-grid{
+        display: none;
     }
 }
 @media screen and (min-width: 600px) and (max-width: 1024px){
