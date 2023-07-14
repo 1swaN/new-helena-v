@@ -103,7 +103,18 @@ document.getElementById('send_button').addEventListener('submit', function(e) {
   console.log(formattedStartTimeString, formattedEndTimeString);
   // Вызов функции saveTimeSlot с передачей данных из формы
   saveTimeSlot(name, phone, email, formattedStartTimeString, formattedEndTimeString);
-});  
+}); 
+
+prevMonthBtn.addEventListener('click', function(event) {
+  currentDate.setMonth(currentDate.getMonth() - 1);
+  generateCalendar();
+});
+
+nextMonthBtn.addEventListener('click', function(event) {
+  currentDate.setMonth(currentDate.getMonth() + 1);
+  generateCalendar();
+});
+     
 
 function generateCalendar() {
   const year = currentDate.getFullYear();
@@ -270,18 +281,7 @@ function parseTime(timeString) {
   return new Date(0, 0, 0, hours, minutes);
 }
 
-prevMonthBtn.addEventListener('click', function(event) {
-  event.preventDefault();
-  currentDate.setMonth(currentDate.getMonth() - 1);
-  generateCalendar();
-});
-
-nextMonthBtn.addEventListener('click', function(event) {
-  event.preventDefault();
-  currentDate.setMonth(currentDate.getMonth() + 1);
-  generateCalendar();
-});
-      
+ 
 $(document).ready(function() {
   // Получение занятых временных слотов из базы данных и сохранение их в объект occupiedTimeSlots
   $.ajax({
