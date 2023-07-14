@@ -9,43 +9,48 @@
   
   #time-input {
     padding: 8px;
-    font-size: 14px;
+    font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
     margin-top: 8px;
     width: 150px;
   }
   
   .date-input {
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
   }
   
-  .date-input input {
-    padding-right: 30px; /* Добавляем отступ для размещения кнопки */
-  }
+  /* .date-input input {
+    padding-right: 30px; /* Добавляем отступ для размещения кнопки 
+  } */
   
-  .date-input .calendar-btn {
-    position: absolute;
-    top: 50%;
-    right: -15px;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
+  .calendar-btn {
+    width: 45px;
+    height: 43px;
+    font-size: 20px;
+    color: #000;
     background-image: url("./img/calendar-icon_34471.ico");
+    background-repeat: no-repeat;
     background-size: cover;
-    border: none;
-    background-color: transparent;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: none;
+    background-color: #fff;
     cursor: pointer;
+    padding: 12px;
   }
   
   
   
-  .date-input .calendar-btn img {
+  /* .date-input .calendar-btn img {
     display: block;
     width: 20px;
     height: 20px;
-  }
+  } */
   
   /* Добавляем стили для размера кнопки */
   /* .date-input .calendar-btn {
@@ -59,16 +64,12 @@
   } */
   
   
-  #date-input {
-    width: 200px; /* Установите ширину поля ввода по вашему усмотрению */
-  }
-  
-  #open-calendar-btn {
+  /* #open-calendar-btn {
     padding: 5px;
     background-color: transparent;
     border: none;
     cursor: pointer;
-  }
+  } */
   
   
   .calendar-popup {

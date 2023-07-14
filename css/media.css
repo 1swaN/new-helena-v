@@ -134,3 +134,39 @@
         width: 90%;
     }
 }
+
+
+
+@media screen and (min-width: 768px) {
+    .modal__container{
+      width: 700px;
+    }
+    .modal__form{
+      width: 100%;
+    }
+    .wrapper{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      gap: 40px;
+      align-items: center;
+    }
+    .modal__input{
+      width: 300px;
+    }
+
+    .modal__booking{
+      gap: 50px;
+    }
+    #textarea{
+      width: 300px;
+    }
+    #date-input{
+      width: 255px;
+    }
+    .send-btn{
+      width: 300px;
+    }
+  }
+  

@@ -9,7 +9,8 @@
   padding: 25px 0;
   color: #fff;
   gap: 30px;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   background-color: #2f2f2f;
 }
 .modal__header{
@@ -17,9 +18,12 @@
   border-bottom: 1px solid #fff;
 }
 .wrapper{
+  width: 95%;
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding: 0 20px;
 }
 .modal__label{
   display: block;
@@ -32,13 +36,13 @@
 .modal__input{
   text-indent: 20px;
   height: 50px;
-  width: 300px;
+  width: 100%;
 }
 .modal__input:focus{
   outline: none;
 }
 .choices__inner{
-  width: 300px;
+  width: 100%;
   padding: 5px 10px;
   /* border-radius: 10px; */
   border-radius: 0px;
@@ -48,7 +52,7 @@
   min-height: auto;
 }
 .language-select{
-  width: 400px;
+  width: 100%;
 }
 
 .is-open .language__inner{
@@ -81,16 +85,15 @@
   outline: none;
   resize: none;
   text-indent: 20px;
-  width: 100%;
+  /* width: 100%; */
 }
-.calendar{
+/* .calendar{
   width: 100%;
-  height: 100px;
-  background-color: #fff;
-}
+} */
 .modal__booking{
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   gap: 20px;
 }
@@ -98,7 +101,8 @@
   background-color: transparent;
   color: #fff;
   height: 50px;
-  width: 300px;
+  /* width: 300px; */
+  width: 150px;
   border: 3px solid #fff;
   transition: all .35s ease-in;
 }
@@ -109,22 +113,5 @@
 }
 .send-btn:active{
   opacity: 0.5;
-}
-
-@media screen and (min-width: 768px) {
-  /* .modal{
-    max-width: 900px;
-    align-items: center;
-    height: auto;
-  } */
-  .wrapper{
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    align-items: center;
-  }
-  .modal__booking{
-    gap: 25px;
-  }
 }
 

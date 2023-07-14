@@ -16,7 +16,6 @@
     opacity: 0;
     text-align: center;
     transition: all 1s ease-in-out;
-    /* line-height: 31px; */
     z-index: 2;
 }
 .astrology_quote::before{
