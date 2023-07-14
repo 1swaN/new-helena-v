@@ -82,35 +82,35 @@ if (available) {
 }
 
 document.getElementById('send_button').addEventListener('submit', function(e) {
-e.preventDefault(); // Отменить стандартное действие отправки формы
-// Получение данных из формы
-var name = document.getElementById('name').value;
-var phone = document.getElementById('phone').value;
-var email = document.getElementById('email').value;
-var selectedDate = document.getElementById("date-input").value; // Получаем выбранную дату
-var selectedTime = document.getElementById("selected-time").value; // Получаем выбранный временной промежуток
-var [startTime, endTime] = selectedTime.split('-').map(time => time.trim());
-// Получение часов и минут из startTime и endTime
-var [startHours, startMinutes] = startTime.split(':').map(time => parseInt(time));
-var [endHours, endMinutes] = endTime.split(':').map(time => parseInt(time));
-console.log(selectedDate, selectedDate.split('.'));
-// Получение дня, месяца и года из строки выбранной даты
-var [datePart] = selectedDate.split(' ');
-var [selectedDay, selectedMonth, selectedYear] = datePart.split('.').map(value => parseInt(value.trim()));
-// Пример обновления формата при записи в массив occupiedTimeSlots
-var formattedStartTimeString = `${selectedYear}-${selectedMonth.toString().padStart(2, '0')}-${selectedDay.toString().padStart(2, '0')} ${startHours.toString().padStart(2, '0')}:${startMinutes.toString().padStart(2, '0')}:00`;
-var formattedEndTimeString = `${selectedYear}-${selectedMonth.toString().padStart(2, '0')}-${selectedDay.toString().padStart(2, '0')} ${endHours.toString().padStart(2, '0')}:${endMinutes.toString().padStart(2, '0')}:00`;
-console.log(formattedStartTimeString, formattedEndTimeString);
-// Вызов функции saveTimeSlot с передачей данных из формы
-saveTimeSlot(name, phone, email, formattedStartTimeString, formattedEndTimeString);
-});    
+  e.preventDefault(); // Отменить стандартное действие отправки формы
+  // Получение данных из формы
+  var name = document.getElementById('name').value;
+  var phone = document.getElementById('phone').value;
+  var email = document.getElementById('email').value;
+  var selectedDate = document.getElementById("date-input").value; // Получаем выбранную дату
+  var selectedTime = document.getElementById("selected-time").value; // Получаем выбранный временной промежуток
+  var [startTime, endTime] = selectedTime.split('-').map(time => time.trim());
+  // Получение часов и минут из startTime и endTime
+  var [startHours, startMinutes] = startTime.split(':').map(time => parseInt(time));
+  var [endHours, endMinutes] = endTime.split(':').map(time => parseInt(time));
+  console.log(selectedDate, selectedDate.split('.'));
+  // Получение дня, месяца и года из строки выбранной даты
+  var [datePart] = selectedDate.split(' ');
+  var [selectedDay, selectedMonth, selectedYear] = datePart.split('.').map(value => parseInt(value.trim()));
+  // Пример обновления формата при записи в массив occupiedTimeSlots
+  var formattedStartTimeString = `${selectedYear}-${selectedMonth.toString().padStart(2, '0')}-${selectedDay.toString().padStart(2, '0')} ${startHours.toString().padStart(2, '0')}:${startMinutes.toString().padStart(2, '0')}:00`;
+  var formattedEndTimeString = `${selectedYear}-${selectedMonth.toString().padStart(2, '0')}-${selectedDay.toString().padStart(2, '0')} ${endHours.toString().padStart(2, '0')}:${endMinutes.toString().padStart(2, '0')}:00`;
+  console.log(formattedStartTimeString, formattedEndTimeString);
+  // Вызов функции saveTimeSlot с передачей данных из формы
+  saveTimeSlot(name, phone, email, formattedStartTimeString, formattedEndTimeString);
+});  
 
 function generateCalendar() {
   const year = currentDate.getFullYear();
   const month = currentDate.getMonth();
   const firstDay = new Date(year, month, 1);
   const lastDay = new Date(year, month + 1, 0);
-  currentMonthYear.textContent = getMonthName(month) + ' ' + year;
+  currentMonthYear.textContent = getMonthName(month, currentLanguage) + ' ' + year;
 
   // Очистить предыдущие даты
   datesContainer.innerHTML = '';
@@ -242,10 +242,16 @@ function formatTime(date) {
 
 generateCalendar();
 
-function getMonthName(month) {
-    const monthNames = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
-    return monthNames[month];
+function getMonthName(month, currentLanguage) {
+  const monthNames = {
+    en: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    esp: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+    rus: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+  };
+
+  return monthNames[currentLanguage][month];
 }
+
 
 function formatDate(date) {
   if (!(date instanceof Date)) {

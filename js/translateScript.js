@@ -11,7 +11,11 @@ const translate = () => {
         if (label.tagName === 'LABEL') {
           label.innerHTML = `<input type="${element.type}" id="${element.id}" name="${element.name}" data-translate="${key}"> ${translations[currentLanguage][key]}`;
         }
+      } else {
+        element.placeholder = translations[currentLanguage][key];
       }
+    } else if (element.tagName === 'TEXTAREA') { // Добавлено условие для <textarea>
+      element.setAttribute('placeholder', translations[currentLanguage][key]);
     } else {
       element.innerHTML = translations[currentLanguage][key];
     }
@@ -48,10 +52,35 @@ const translations = {
     sns_text3: 'The results are pleasing in every way.',
     rights_content: 'All rights reserved - 2023',
     sign_up_button: 'Sign up',
-    footer_question: 'Want to know more?'
+    footer_question: 'Want to know more?',
+    dante_quote: 'Astrology is the noblest of sciences.', 
+    quote__dante: 'Dante Alighieri',
+    socratus_quote: 'There is a sun in every man, just let it shine.',
+    quote_socratus: 'Socrates',
+    chizhevsky_quote: 'Who denies the influence of the stars denies wisdom and contradicts the most obvious experience.',
+    quote_chizhevsky: 'A.L. Chizhevsky',
+    uvenalius_quote: 'Astrology reveals the will of the gods',
+    quote_uvenalius: 'Juvenal',
+    dain_quote: 'Astrology is a language. If you understand it, the heavens speak to you',
+    quote_dain: 'Dane Radyar',
+    datetime_input: 'Select the date and time',
+    language_select: 'Select the language of the session',
+    name_text: 'Your name',
+    surname_text: 'Your surname',
+    email_text: 'Your E-mail',
+    sunday: 'Sun',
+    monday: 'Mon',
+    tuesday: 'Tue',
+    wednesday: 'Wed',
+    thursday: 'Thu',
+    friday: 'Fri',
+    saturday: 'Sat',
+    customer_info: 'Information about you',
+    submit_button: 'Send!',
+    customer_wishes: 'Add your wishes:'
   },  
   esp: {
-    about_container: 'Elena - a specialist in multidimensional medicine, psychology and psychosomatics.',
+    about_container: 'Elena - especialista en medicina multidimensional, psicología y psicosomática.',
     heatlhcare_container: 'Cuidado de la salud',
     health_section: 'Juntos podemos descubrir qué vitaminas son más adecuadas para usted y muchas otras cosas!',
     health_header: 'Encontrarás mucho conocimiento sobre tu salud: ',
@@ -79,7 +108,33 @@ const translations = {
     sns_text3: 'Los resultados son agradables en todos los sentidos.',
     rights_content: 'Todos los derechos reservados - 2023',
     sign_up_button: 'Regístrese para una sesión',
-    footer_question: '¿Quieres saber más?'
+    footer_question: '¿Quieres saber más?',
+    dante_quote: 'La astrología es la más noble de las ciencias. Dante Alighieri',
+    quote_dante: 'Dante Alighieri',
+    socratus_quote: 'Hay un sol en cada hombre, sólo hay que dejarlo brillar.',
+    quote_socratus: 'Sócrates',
+    chizhevsky_quote: 'Quien niega la influencia de los astros niega la sabiduría y contradice la experiencia más evidente.',
+    quote_chizhevsky: 'A.L. Chizhevsky',
+    uvenalius_quote: 'La astrología revela la voluntad de los dioses',
+    quote_uvenalius: 'Juvenal',
+    dain_quote: 'La astrología es un lenguaje. Si lo entiendes, el cielo te habla',
+    quote_dain: 'Dane Radyar',
+    datetime_input: 'Seleccione una fecha y hora', 
+    language_select: 'Selecciona el idioma de la sesión', 
+    name_text: 'Tu nombre',
+    surname_text: 'Tu apellido',
+    email_text: 'Tu correo electrónico',
+    sunday: 'Do',
+    monday: 'Lu',
+    tuesday: 'Ma',
+    wednesday: 'Mi',
+    thursday: 'Ju',
+    friday: 'Vi',
+    saturday: 'Sa',
+    customer_info: 'Información sobre usted',
+    submit_button: '¡Enviar!',
+    customer_wishes: 'Añade tus deseos:'
+
   },
   rus: {
     about_container: 'Елена, специалист многомерной медицины, психологии и психосоматики.',
@@ -110,7 +165,32 @@ const translations = {
     sns_text3: 'Результаты приятные во всех отношениях.',
     rights_content: 'Все права защищены - 2023',
     sign_up_button: 'Записаться',
-    footer_question: 'Хотите узнать больше?'
+    footer_question: 'Хотите узнать больше?',
+    dante_quote: 'Астрология - благороднейшая из наук',
+    quote_dante: 'Данте Алигьери',
+    socratus_quote: 'В каждом человеке солнце, только дайте ему светить.',
+    quote_socratus: 'Сократ',
+    chizhevsky_quote: 'Кто отрицает влияние звёзд, тот отрицает мудрость и противоречит самому явному опыту.',
+    quote_chizhevsky: 'А.Л. Чижевский',
+    uvenalius_quote: '«Астрология открывает волю богов»',
+    quote_uvenalius: 'Ювеналий',
+    dain_quote: 'Астрология – это язык. Если вы понимаете его, небеса говорят с вами',
+    quote_dain: 'Дэйн Радьяр',
+    datetime_input: 'Выберите дату и время',
+    language_select: 'Выберите язык сеанса',
+    name_text: 'Ваше имя',
+    surname_text: 'Ваша фамилия',
+    email_text: 'Ваш E-mail', 
+    sunday: 'Вс',
+    monday: 'Пн',
+    tuesday: 'Вт',
+    wednesday: 'Ср',
+    thursday: 'Чт',
+    friday: 'Пт',
+    saturday: 'Сб',
+    customer_info: 'Информация о Вас',
+    submit_button: 'Отправить!',
+    customer_wishes: 'Добавьте Ваши пожелания:'
   }
 };
 
