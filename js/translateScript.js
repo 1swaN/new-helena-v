@@ -35,7 +35,7 @@ const translations = {
     lifestyle_section: 'You have a great opportunity to change your lifestyle and moreover - to change the space around you!',
     lifestyle_header: 'We will be able to:',
     lifestyle_button: 'Learn more',
-    lifestyle_text: 'To improve your condition, your level of vitality, to remove the causes of loss of energy, lethargy, dissatisfaction with oneself and/or others.',
+    lifestyle_text: 'Improve your condition, your level of vitality, to remove the causes of loss of energy, lethargy, dissatisfaction with oneself and/or others.',
     astrology_container: 'Astrology',
     astrology_section: 'Astrology is a great science about future and past. Wanna know your future?',
     astrology_header: 'Together we can:',
