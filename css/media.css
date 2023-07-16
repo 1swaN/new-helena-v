@@ -96,6 +96,10 @@
     .quotes.no-grid{
         display: none;
     }
+    .send-btn{
+        align-self: center;
+        width: 100%;
+    }
 }
 @media screen and (min-width: 600px) and (max-width: 1024px){
     .about{
@@ -157,7 +161,7 @@
     }
 
     .modal__booking{
-      gap: 50px;
+      gap: 30px;
     }
     #textarea{
       width: 300px;
