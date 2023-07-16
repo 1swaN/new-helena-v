@@ -7,6 +7,11 @@ body{
   font-family: 'Roboto';
   background: #151515;
 }
+.loader{
+  display: block;
+  height: 100vh;
+  background-color: #151515;
+}
 .loading{
   position: absolute;
   top: 50%;

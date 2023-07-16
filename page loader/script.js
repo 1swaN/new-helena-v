@@ -1,4 +1,5 @@
 function progress(){
+  var loader = document.querySelector('.loader')
   var percent = document.querySelector('.percent');
   var progress = document.querySelector('.progress');
   var text = document.querySelector('.text');
@@ -10,6 +11,9 @@ function progress(){
       percent.classList.add("text-blink");
       text.style.display = "block";
       clearInterval(loading);
+      setTimeout(() =>{
+        loader.style.display = "none"
+      }, 1500)
     }else{
       per = per + 4;
       count = count + 1;
