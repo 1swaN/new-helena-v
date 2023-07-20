@@ -142,9 +142,7 @@
     }
 }
 
-
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px){
     .modal__container{
       width: 700px;
     }
@@ -173,7 +171,8 @@
       width: 255px;
     }
     .send-btn{
-      width: 255px;
+      /* width: 255px; */
+      width: 100%;
     }
   }
   
