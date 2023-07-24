@@ -140,6 +140,12 @@
     .main .tiny-container{
         width: 90%;
     }
+    .modal__container{
+      width: 500px;
+    }
+    .modal__warning{
+        width: 350px;
+    }
 }
 
 @media screen and (min-width: 768px){
