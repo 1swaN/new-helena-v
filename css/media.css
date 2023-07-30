@@ -55,11 +55,11 @@
         text-align: center;
     }
     .section__header, .basic-info-visible-header i{
-        display: block;
         text-align: center;
     }
     .basic-info-visible-header i{
         padding-bottom: 20px;
+        padding-right: 0;
     }
     .section__header, .section__desc{
         text-align: center;
@@ -103,6 +103,9 @@
     }
     .modal__warning{
         width: 255px;
+    }
+    .guarantees i{
+        display: none;
     }
 }
 @media screen and (min-width: 600px) and (max-width: 1024px){
