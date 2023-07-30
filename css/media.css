@@ -34,6 +34,7 @@
     }
     .about__header{
         font-size: 36px;
+        width: 100%;
     }
     .quotes{
         display: none;
