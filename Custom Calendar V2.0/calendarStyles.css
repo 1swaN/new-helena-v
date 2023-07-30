@@ -99,6 +99,14 @@
     margin: 0 auto;
     text-align: center;
     color: black;
+    background-color: #fff;
+  }
+
+  @media screen and (max-width: 600px) {
+    .calendar-popup{
+      top: 50%;
+      left: -15%;
+    }
   }
   
   .calendar-header {
@@ -126,6 +134,12 @@
     border: none;
     cursor: pointer;
   }
+  .prev-month-btn{
+    margin-left: 10px;
+  }
+  .next-month-btn{
+    margin-right: 10px;
+  }
   
   .weekdays {
     display: flex;
@@ -148,11 +162,18 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 5px;
     z-index: 9999;
+    opacity: 1;
+    animation: showTimeMenu 1s ease
+  }
+  @keyframes showTimeMenu {
+    from{opacity: 0;}
+    to{opacity: 1;}
   }
   
   .time-menu div {
     padding: 5px;
     cursor: pointer;
+    text-align: center;
   }
   
   .time-menu div:hover {
